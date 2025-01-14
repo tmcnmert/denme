@@ -1,0 +1,42 @@
+/* Card image sizing */
+.card-img-top {
+    width: 100%;
+    height: 350px;  /* Fixed height for all card images */
+    object-fit: cover;  /* This ensures images cover the area without distortion */
+    object-position: center;  /* Centers the image */
+}
+
+/* Story cards specific styling */
+.stories-section .card {
+    transition: transform 0.3s ease;
+    height: 100%;  /* Ensures all cards in a row are same height */
+}
+
+.stories-section .card:hover {
+    transform: translateY(-5px);  /* Slight lift effect on hover */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);  /* Subtle shadow on hover */
+}
+
+/* Main content images */
+.main-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ensure consistent card heights */
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    flex: 1;  /* Takes up remaining space */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Push button to bottom of card */
+.card-body .btn {
+    margin-top: auto;
+}
