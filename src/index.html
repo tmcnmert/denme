@@ -42,14 +42,31 @@
         </div>
     </nav>
 
-
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="hero-title">Until we are all equal</h1>
+                    <i class="hero-text text-danger">
+                        "Children are the living messages we send to a time we will not see." - John F. Kennedy</i>
+                    <p class="hero-description">
+                        "Every child deserves a champion – an adult who will never give up on them, who understands the power of connection and insists that they become the best that they can possibly be." - Rita Pierson                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="../images/play.jpg" alt="Happy child in garden" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </div> 
+  
 
     <!-- Main Content with padding for fixed navbar -->
-    <main class="container" style="margin-top: 100px;">
+    <main class="container">
         <h1 class="text-center mb-5">Children's Rights Matter</h1>
         
         <div class="row g-4">
-            <div class="col-md-4">
+            <div class="col-md-4 hvrCard">
                 <div class="card h-100">
                     <img src="../images/frst.png" class="card-img-top" alt="Right to Education">
                     <div class="card-body">
@@ -60,7 +77,7 @@
                 </div>
             </div>
             
-            <div class="col-md-4">
+            <div class="col-md-4 hvrCard">
                 <div class="card h-100">
                     <img src="../images/healthcare.jpg" class="card-img-top" alt="Right to Healthcare">
                     <div class="card-body">
@@ -71,7 +88,7 @@
                 </div>
             </div>
             
-            <div class="col-md-4">
+            <div class="col-md-4 hvrCard">
                 <div class="card h-100">
                     <img src="../images/play.jpg" class="card-img-top" alt="Right to Play">
                     <div class="card-body">
@@ -82,39 +99,63 @@
                 </div>
             </div>
         </div>
-        <div class="row g-4">
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="../images/frst.png" class="card-img-top" alt="Right to Education">
-                    <div class="card-body">
-                        <h5 class="card-title">Right to Education</h5>
-                        <p class="card-text">Every child has the right to learn and go to school.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="../images/healthcare.jpg" class="card-img-top" alt="Right to Healthcare">
-                    <div class="card-body">
-                        <h5 class="card-title">Right to Healthcare</h5>
-                        <p class="card-text">Every child has the right to good quality health care.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="../images/play.jpg" class="card-img-top" alt="Right to Play">
-                    <div class="card-body">
-                        <h5 class="card-title">Right to Play</h5>
-                        <p class="card-text">Every child has the right to play and rest.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+        
     </main>
+    <div class="carousel position-relative">
+        <div id="carouselCards" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="single-card-container">
+                        <div class="card h-100">
+                           <a href="../pages/education.html"><img src="../images/frst.png" class="card-img-top" alt="Right to Education"></a>
+                            <div class="card-body">
+                                <h5 class="card-title">Right to Education</h5>
+                                <p class="card-text">Every child has the right to learn and go to school.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <div class="single-card-container">
+                        <div class="card h-100">
+                            <a href="../pages/stories.html"><img src="../images/healthcare.jpg" class="card-img-top" alt="Right to Healthcare"></a>
+                            <div class="card-body">
+                                <h5 class="card-title">Right to Healthcare</h5>
+                                <p class="card-text">Every child has the right to good quality health care.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <div class="single-card-container">
+                        <div class="card h-100">
+                            <a href="../pages/play.html"><img src="../images/play.jpg" class="card-img-top" alt="Right to Play"></a>
+                            <div class="card-body">
+                                <h5 class="card-title">Right to Play</h5>
+                                <p class="card-text">Every child has the right to play and rest.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Navigation Arrows -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCards" data-bs-slide="prev">
+                <span class="carousel-arrow">
+                    <i class="bi bi-chevron-left"></i>
+                </span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselCards" data-bs-slide="next">
+                <span class="carousel-arrow">
+                    <i class="bi bi-chevron-right"></i>
+                </span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="bg-dark text-light py-4 mt-5">
@@ -138,7 +179,14 @@
                         <a href="#" class="text-light me-3"><i class="bi bi-facebook fs-3"></i></a>
                         <a href="#" class="text-light me-3"><i class="bi bi-twitter fs-3"></i></a>
                         <a href="#" class="text-light me-3"><i class="bi bi-instagram fs-3"></i></a>
+                        <a href="#" class="text-light me-3"><i class="bi bi-github fs-3"></i></a>
+
                     </div>
+                </div>
+            </div>
+            <div class="row mt-3"></div>
+                <div class="col-12 text-center">
+                    <p class="mb-2"> Coded by  <i> &copy; Celil </i><i>&copy;Fatih </i><i>&copy;Mert </i><i>&copy;Rukiye </i>    .</p>
                 </div>
             </div>
             <div class="row mt-3">

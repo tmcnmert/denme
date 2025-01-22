@@ -1,0 +1,169 @@
+.hvrCard {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* All cards scale down when any card is hovered */
+.row:hover>.hvrCard {
+    transform: scale(0.7);
+    
+}
+
+/* Hovered card scales up */
+.row:hover>.hvrCard:hover {
+    transform: scale(1.1);
+    z-index: 100;
+}
+
+
+
+.hero-section {
+    padding: 120px 0 60px;
+    background-color: #f8f9fa;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #1a2b49;
+    margin-bottom: 1.5rem;
+}
+
+.hero-text {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    color: #3508da;
+    margin-bottom: 2rem;
+}
+
+.bi{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    transition:transform 0.5s ease;
+    
+}
+.bi-facebook:hover{
+    padding: 5px;
+    color: #0056b3;
+    background-color: #fbfcfd;
+    border-radius: 3px;
+    transition: transform 0.5s ease;
+}
+.bi-twitter:hover{
+    padding: 5px;
+    color: #0056b3;
+    background-color: #fbfcfd;
+    border-radius: 3px;
+    transition: transform 0.5s ease;
+}
+.bi-instagram:hover{
+    padding: 5px;
+    color: #be295b;
+    background-color: #fbfcfd;
+    border-radius: 3px;
+    transition: transform 0.5s ease;
+}
+.bi-github:hover{
+    padding: 5px;
+    color: #0e0005;
+    background-color: #fbfcfd;
+    border-radius: 3px;
+    transition: transform 0.5s ease;
+}
+
+
+
+
+.carousel {
+    max-width: 700px;
+    justify-content: center;
+    display: block;
+    padding: 10px 10px;
+    margin: auto auto;
+    background: linear-gradient(145deg, #f8f9fa, #e9ecef);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.single-card-container {
+    max-width: 400px;
+    max-height: 400px;
+    margin: auto auto;
+    padding: 30px;
+}
+
+.carousel .card {
+    transform: scale(1);
+    transition: transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.carousel .card:hover {
+    transform: scale(1);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.carousel .card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.carousel .card-body {
+    padding: 1.2rem;
+    background: white;
+}
+
+.carousel .card-title {
+    color: #1a2b49;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.carousel .card-text {
+    color: #180505;
+    line-height: 1.6;
+}
+
+.carousel-arrow {
+    width: 45px;
+    height: 45px;
+    background-color: #007bff;
+    /* border-radius: 50%; */
+    display: block;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0,123,255,0.3);
+    transition: all 0.3s ease;
+}
+.carousel-arrow{
+    border-radius: 0%;
+    
+}
+.carousel-arrow i {
+     color: rgb(248, 248, 248);
+     font-size: 28px;
+
+}
+
+.carousel-control-prev {
+    left: -20px;
+}
+
+.carousel-control-next {
+    right: -20px;
+}
+
+.carousel-control-prev:hover .carousel-arrow,
+.carousel-control-next:hover .carousel-arrow {
+    background-color: #0056b3;
+    transform: scale(1.2);
+    
+}
